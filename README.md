@@ -1,4 +1,4 @@
-# jus10.dev.vue
+# my personal site ( justenboykin.com )
 
 ## Project setup
 ```

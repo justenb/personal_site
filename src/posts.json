@@ -1,0 +1,11 @@
+{
+    "2022": [
+      {
+        "id": "rust_wasm_yew",
+        "date": "May 5, 2022",
+        "title": "Start building WebAssembly applications with Yew",
+        "description": "Yew is a dom rendering framework built in rust that implements a standard component interface for interacting with the dom via webAssembly.",
+        "tags": ["rust", "wasm", "yew", "programing"]
+      }
+    ]
+}

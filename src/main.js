@@ -1,8 +1,23 @@
 import Vue from 'vue'
-import App from './App.vue'
+import AppContainer from './AppContainer.vue'
+import VueRouter from 'vue-router'
+import router from './router'
+// import store from './store'
+
+import VTooltip from 'v-tooltip'
+
+Vue.use(VTooltip, { defaultHtml: true })
+Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
+router.afterEach((to) => {
+  Vue.nextTick(() => {
+    document.title = to.meta.title(to)
+  })
+});
+
 new Vue({
-  render: h => h(App),
+  router,
+  render: h => h(AppContainer),
 }).$mount('#app')

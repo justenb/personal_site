@@ -1,0 +1,106 @@
+@import "./partials/gruvbox";
+$one-dark-base:    #282c34;
+$one-dark-mono-1:  #abb2bf;
+$one-dark-mono-2:  #818896;
+$one-dark-mono-3:  #5c6370;
+$one-dark-hue-1:   #56b6c2;
+$one-dark-hue-2:   #61aeee;
+$one-dark-hue-3:   #c678dd;
+$one-dark-hue-4:   #98c379;
+$one-dark-hue-5:   #e06c75;
+$one-dark-hue-5-2: #be5046;
+$one-dark-hue-6:   #d19a66;
+$one-dark-hue-6-2: #e6c07b;
+
+$light-base:    #b3b3b4;
+$light-mono-1:  #abb2bf;
+$light-mono-2:  #818896;
+$light-mono-3:  #5c6370;
+$light-hue-1:   #56b6c2;
+$light-hue-2:   #61aeee;
+$light-hue-3:   #c678dd;
+$light-hue-4:   #98c379;
+$light-hue-5:   #e06c75;
+$light-hue-5-2: #be5046;
+$light-hue-6:   #d19a66;
+$light-hue-6-2: #e6c07b;
+
+
+
+:root {
+    --background-color: #f0ead9;
+    --text-color: $one-dark-base;
+    --link-color: $light-mono-2;
+    --border-color: #1b1b1b;
+    --theme-toggle-button:#1b1b1b;
+    .tooltip {
+        color: white;
+        border-radius: 2px;
+        padding:3px ;
+        background-color: black;
+    }
+
+    div.markdown-body >  section > h1, 
+    div.markdown-body >  section > h2, 
+    div.markdown-body >  section > h3, 
+    div.markdown-body >  section > h4, 
+    div.markdown-body >  section > h5 {
+        font-weight: bold;
+    }
+
+    div.markdown-body >  section > ul > li {
+        list-style: disc;
+    }
+
+    div.markdown-body > section .highlight pre, .markdown-body > section pre code {
+        font-family: 'Victor Mono';
+    }
+    div.markdown-body > section .highlight pre, .markdown-body > section pre {
+        background-color: #17181a;
+    }
+    div.markdown-body section pre {
+        color: rgb(95, 156, 236);
+    }
+}
+
+
+html[data-theme='dark'] {
+    --background-color:#0d0d0d;
+    --text-color: #f0ead9;
+    --link-color: $light-mono-1;
+    --border-color:#f0ead9;
+    --text-color: rgb(184, 184, 184);
+    --theme-toggle-button: #ffffff;
+    .tooltip {
+        color:black;
+        border-radius: 2px;
+        padding:3px ;
+        background-color:#fff;
+    }
+    p{
+        color: #f0ead9;
+    }
+
+    h2, h3, h4, h5, li {
+        color: rgb(216, 132, 6);
+    }
+    h1 {
+        color: #56b6c2;
+    }
+
+    .markdown-body > section .highlight pre, .markdown-body > section pre code {
+        font-family: 'Victor Mono';
+    }
+    .markdown-body > section .highlight pre, .markdown-body > section pre {
+        background-color: #17181a;
+    }
+    .markdown-body section pre {
+        color: rgb(95, 156, 236);
+    }
+    span.hljs-keyword {
+        color: #f0ead9!important;
+    }
+    span.char.custom.typed {
+        color: #ffffff !important;
+    }
+}
